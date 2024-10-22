@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/hello.dart';
-import 'package:flutter_application_2/kolombaris.dart';
+import 'ui/beranda.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,9 +10,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Klinik',
-      home: Kolombaris(),
+      home: Beranda(),
     );
   }
 }
